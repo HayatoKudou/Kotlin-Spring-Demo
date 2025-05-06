@@ -6,9 +6,6 @@ import org.springframework.boot.ExitCodeGenerator
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.jdbc.core.JdbcTemplate
-import java.util.function.Consumer
-import java.util.stream.Collectors
-
 
 @SpringBootApplication
 class Application(
