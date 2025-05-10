@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Batch" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="com.example.batch.ApplicationKt" />
+    <module name="com.example.batch.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
