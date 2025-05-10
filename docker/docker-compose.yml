@@ -1,0 +1,12 @@
+services:
+  postgres:
+    container_name: "postgres"
+    image: postgres:17.5
+    volumes:
+      - ./volume/postgres/logs:/var/log/postgresql/
+    environment:
+      - POSTGRES_PASSWORD=MBDSLNBSDBDS532FBS0SGE
+      - POSTGRES_USER=demo_tarou
+      - POSTGRES_DB=demo
+    ports:
+      - "5434:5432"
