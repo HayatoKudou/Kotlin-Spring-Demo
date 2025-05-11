@@ -12,6 +12,7 @@
 ### ツール
 - Gradle
 - Flyway
+- jdbc
 - JUnit
 - Docker
 
