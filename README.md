@@ -12,7 +12,7 @@
 ### ツール
 - Gradle
 - Flyway
-- jUnit
+- JUnit
 - Docker
 
 # 開発環境構築
