@@ -8,3 +8,8 @@ spring:
     driver-class-name: org.postgresql.Driver
 server:
   port: 8081
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true

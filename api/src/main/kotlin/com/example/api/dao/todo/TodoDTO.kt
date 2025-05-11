@@ -19,7 +19,7 @@ data class TodoDTO(
     override val isCompleted: Boolean,
     override val dueDate: java.time.LocalDate?,
     override val createdAt: java.time.OffsetDateTime,
-    override  val updatedAt: java.time.OffsetDateTime
+    override val updatedAt: java.time.OffsetDateTime
 ) : ITodoDTO {
     companion object {
         internal fun from(entity: ITodoEntity): TodoDTO {

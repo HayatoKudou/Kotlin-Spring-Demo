@@ -25,6 +25,14 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.postgresql:postgresql:42.7.2")
+
+    // OpenAPI準拠のAPI仕様書を生成する
+    // docs URL: http://localhost:8081/v3/api-docs.yaml
+    // swagger URL：http://localhost:8081/swagger-ui/index.html
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.8.0")
+    implementation("org.springdoc:springdoc-openapi-starter-common:2.8.0")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.0")
+
     compileOnly("jakarta.persistence:jakarta.persistence-api:3.2.0")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")

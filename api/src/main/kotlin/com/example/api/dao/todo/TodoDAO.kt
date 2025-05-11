@@ -4,7 +4,7 @@ import com.example.api.repository.TodoRepository
 import org.springframework.stereotype.Component
 
 @Component
-class TodoDao(
+class TodoDAO(
     private val todoRepository: TodoRepository
 ) {
     fun findAll(): List<TodoDTO> {

@@ -1,19 +1,26 @@
 package com.example.api.controller
 
 import com.example.api.dao.todo.TodoDTO
-import com.example.api.dao.todo.TodoDao
+import com.example.api.dao.todo.TodoDAO
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import java.util.concurrent.atomic.AtomicLong
-import com.example.api.repository.TodoRepository
 import org.springframework.http.HttpStatus
+import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+
+const val URL_BASE = "/api/v1"
 
 @RestController
-class TodoController(private val todoDao: TodoDao) {
+@RequestMapping(path = [URL_BASE])
+class TodoController(private val todoDao: TodoDAO) {
 
-    @GetMapping("/todos")
+    @RequestMapping(
+        path = ["/todos"],
+        method = [RequestMethod.GET],
+        produces = [MediaType.APPLICATION_JSON_VALUE]
+    )
     fun get(): ResponseEntity<List<TodoDTO>> {
         val todos = todoDao.findAll()
         return ResponseEntity(todos, HttpStatus.OK)
