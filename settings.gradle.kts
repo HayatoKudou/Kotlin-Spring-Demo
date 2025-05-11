@@ -1,2 +1,5 @@
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+}
 rootProject.name = "com.example"
-include("api", "batch")
+include("api", "batch", "flyway")
