@@ -15,7 +15,7 @@ class Application(
         val logger = LoggerFactory.getLogger(this::class.java)
         logger.info("バッチ処理を開始します")
 
-        jdbcTemplate.execute("DROP TABLE customers IF EXISTS")
+        jdbcTemplate.execute("DROP TABLE IF EXISTS customers")
         jdbcTemplate.execute(
             "CREATE TABLE customers(" +
                     "id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))"
