@@ -1,21 +1,21 @@
 # 技術
 
-## 言語
+### 言語
 - Kotlin
 
-## フレームワーク
+### フレームワーク
 - Spring Boot
 
-## DB
+### DB
 - PostgreSQL
 
-## ツール
+### ツール
 - Gradle
 - Flyway
 - jUnit
 - Docker
 
-# 開発環境
+# 開発環境構築
 
 ```bash
 cd docker
